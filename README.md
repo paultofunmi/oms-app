@@ -1,7 +1,7 @@
 # Order Management System (OMS) Web Service
 
 ## How to Run the App using Docker
-* Run git clone like so: git clone https://github.com/paultofunmi/oms.git
+* Run git clone like so: https://github.com/paultofunmi/oms-app.git
 * cd into OMS directory and run: docker-compose up -d
 * Check that the app is running: docker ps
 * Test the app http://0.0.0.0:80/api/swagger-ui.html#!

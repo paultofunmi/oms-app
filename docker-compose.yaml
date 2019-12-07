@@ -15,6 +15,8 @@ services:
   hk-mysql:
    container_name: hk-mysql
    image: mysql/mysql-server:5.7
+   volumes:
+     - ./db-data:/var/lib/mysql
    environment:
     MYSQL_DATABASE: oms
     MYSQL_ROOT_PASSWORD: oms-password
@@ -35,3 +37,6 @@ services:
     command: mvn clean spring-boot:run
     depends_on:
       - hk-mysql
+
+volumes:
+  db-data:
