@@ -32,8 +32,8 @@ Possible Considerations for redundancy are:
 This task was addressed by creating resource controllers, models (entities), services (logic) and repositories. 
 To cater for possible exceptions in the app, I have created BadRequestException and NotFoundException. 
 
-* The app runs on port 8080 (This port is set in docker-compose.yml file): http://0.0.0.0:8080
-* API Documentation can be accessed using this url: http://0.0.0.0:8080/api/swagger-ui.html#!
+* The app runs on port 80
+* API Documentation can be accessed using this url: http://0.0.0.0:80/api/swagger-ui.html#!
 
 #### Approach to Error Handling
 To ensure that error responses adhere to standard and are easy to update, I have created RestExceptionHandler Advicer. This advicer picks up NotFound, BadRequest and General Exception.
@@ -46,8 +46,8 @@ While the instruction said basic CRUD but Delete operation was absent, I impleme
      
 
 #### Controlllers
-* Product Controller (http://0.0.0.0:8080/api/products)
-* Order Controller (http://0.0.0.0:8080/api/orders)
+* Product Controller (http://0.0.0.0:80/api/products)
+* Order Controller (http://0.0.0.0:80/api/orders)
 
 #### Services
 * Product Service: The service class contains logic for processing products 
